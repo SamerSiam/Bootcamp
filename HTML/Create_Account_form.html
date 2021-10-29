@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account</title>
+</head>
+<body>
+  <h1>Create an Account</h1>
+  <form action="NewAcount.js">
+
+  <div>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+  </div>
+  <br>
+  <div>
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password">
+  </div>
+  <br>
+  <div>
+    <label for="age">Age:</label><br>
+    <select name="age" id="age">
+
+      <option value="<10>">&lt10</option>
+      <option value="10-14">10-14</option>
+      <option value="15-19">15-19</option>
+      <option value="20-25">20-25</option>
+      <option value="26-32">26-32</option>
+      <option value="33-45">33-45</option>
+      <option value="46-60">46-60</option>
+      <option value="61-72">61-72</option>
+      <option value="73+">&gt73</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <label for="about">Tell us About Yourself</label><br>
+    <textarea name="about" id="about" cols="50" rows="5"></textarea>
+  </div>
+  <br>
+  <div>
+  <input type="checkbox" name="terms" id="terms">
+  <label for="terms"> I agree to the </label> <a href="terms.html">terms of service</a>
+  </div>
+  <br>
+  <button type="submit">Sign up</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float and align</title>
+  <style>
+   *{
+     box-sizing: border-box;
+     margin:5px;
+     padding:0;
+   }
+   body{
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 1.4em;
+   }
+   .box{
+     background: #f4f4f4;
+     border: 1px solid #333;
+     padding: 20px;
+     margin-bottom: 10px;
+     text-align: center;
+   }
+   .box p{
+     text-align: left;
+     
+   }
+
+   #header{
+     background-color: orange;
+    }
+   #side{
+    background-color:green;
+     float:left;
+     width: 30%;
+     height:250px;
+     margin 5px;
+   }
+   #main{
+    background-color:purple;
+    text-align: right;
+     float:right;
+     width: 65%;
+     height: 250px;
+   }
+   #footer{
+    background-color: BLUE;
+   }
+   .container{
+      max-width: 960px;
+      margin: 0 auto;
+      border: 1px solid #333;
+
+    }
+    .clr{
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="header" class="box">
+    <h3>Header</h3>
+  </div>
+  <div id="side" class="box">
+    <h3>Side</h3>
+  </div>
+  <div id="main" class="box">
+    <h3>Main</h3>
+  </div>
+<div class="clr"></div>
+  <div id="footer" class="box">
+    <h3>Footer</h3>
+   
+  </div>
+  </div>
+  
+</body>
+</html>
