@@ -1,0 +1,16 @@
+.columnContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item {
+  display: inline;
+  width: 23%;
+  padding: 10px;
+  margin: 2px;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  text-align: justify;
+}
