@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.Parentbox {
+  display: flex;
+  width: 20vw;
+  height: 20vh;
+  background: red;
+}
+
+.Parentbox::before {
+  content: "";
+  display: flex;
+  width: 10vw;
+  height: 20vh;
+  background: purple;
+}
