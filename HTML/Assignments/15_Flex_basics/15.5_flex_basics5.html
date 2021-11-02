@@ -19,12 +19,11 @@
       flex-direction: row;
       background: beige;
       height: 50vh;
-
       justify-content: flex-end;
-      flex: 1 0 200px;
-      
-         
+      flex: 1 0 200px; 
 }
+
+
     
 .item{
   margin: 5px 5px;
@@ -32,13 +31,23 @@
   height:300px;
   justify-self: flex-end;
   
-  
  }
     .title{
       justify-self: flex-start;
     }
 
-  
+@media (max-width: 500px){
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+      justify-self:center;
+    }
+
+}
   </style>
 </head>
 <body>
