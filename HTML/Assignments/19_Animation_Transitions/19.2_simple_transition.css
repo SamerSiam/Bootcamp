@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.Parentbox {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.Parentbox::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background: blue;
+  transform: translatex(-200px);
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+  z-index: 10;
+}
+
+.Parentbox:hover:after {
+  background-color: green;
+  transform: translatex(0);
+}

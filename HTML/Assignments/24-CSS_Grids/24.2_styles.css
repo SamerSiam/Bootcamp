@@ -1,0 +1,40 @@
+.grid-container {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat (4, 1fr); /** each cell one fraction**/
+  grid-template-rows: repeat (3, 1fr);
+  gap: 2rem;
+}
+.box1 {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background: red;
+  border-radius: 25px;
+}
+.box2 {
+  grid-column: 1 / 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background: blue;
+  border-radius: 25px;
+}
+.box3 {
+  grid-column: 2/4;
+  grid-row: 2;
+  background: green;
+  border-radius: 25px;
+}
+.box4 {
+  grid-area: box4;
+  grid-column: 2/3;
+  grid-row: 3;
+  background: purple;
+  border-radius: 25px;
+}
+.box5 {
+  grid-area: box5;
+  grid-column: 3 / 4;
+  grid-row: 3;
+  background: purple;
+  border-radius: 25px;
+}
