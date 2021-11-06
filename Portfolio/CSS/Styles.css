@@ -33,10 +33,10 @@ p {
 .page1-container{
   position: relative;
   width:100%;
-  height: 60vh;
+  height: 70vh;
   margin :0 auto;
   display: grid;
-  background: url(../Images/stars-road.jpg)  no-repeat center center/cover ;
+  background: url(../Images/moonStars.jpg)  no-repeat center center/cover ;
   grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
@@ -63,8 +63,8 @@ p {
   width: 100%;
   margin :0 auto;
   height: 100%;
-  background: #191834 ;
-  opacity: 0.5;
+  background: #7C8589;
+  opacity: 0.4;
 }
 .header {
   display: flex; 
@@ -116,13 +116,19 @@ height: 100%;
  justify-content: center;
  color: #fff;
  padding: 2rem 2rem;
-  /* margin: 1rem 1rem; */
   text-align: center;
   font-size: 1vw;
 }
+
+.content .title{
+  padding-top: 1vh;
+  width:100%;
+  
+}
 .content .intro{
-  margin-top: 5vw;
+  margin-top: 10vw;
   font-size: 1vw;
+  line-height: 2vw;
   text-align: justify;
   color: #fff;
 }
@@ -148,10 +154,11 @@ height: 100%;
   border-radius: 30%;
 }
 }
-
 .experience{
+  font-size: 1vw;
   display: flex;
   justify-content: space-evenly;
+  text-align: justify;
   width:100%;
   margin: 0 auto;
   background: #B8B7E3;
@@ -166,12 +173,17 @@ height: 100%;
 .item{
   margin: 5px 5px;
   color: #fff;
-  width: 200px;
+  width: 15vw;
   border-radius: 20%;
   border: 5px dotted #191834;
   text-align: center;
   padding: 5px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+ }
+
+ .item ul li::before{
+  content: '✓ ';
+  color: green;
  }
 .footer{
   display: flex;
