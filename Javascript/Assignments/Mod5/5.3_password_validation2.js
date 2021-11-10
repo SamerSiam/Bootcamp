@@ -44,11 +44,9 @@ const checkUpperCase= (word)=>{
     return false;
 }
 
-let myMessage= validatePassword1("samer") ;
-let myMessage2= validatePassword2("samer123!") ;
+
 let myMessage3= validatePassword2("8jj08hj8hjbbnb;jsdb89nbnaha") ;
 let myMessage4= advancedPassword("8jj08hj8hjbbnb;jsdb89nbnaha") ;
-console.log (myMessage);
-console.log (myMessage2);
+
 console.log (myMessage3);
 console.log (myMessage4);
