@@ -1,6 +1,6 @@
-let johnScore=[101,102,103];
-let mikeScore=[103,141,102];
-let maryScore=[101,102,123];
+let johnScore=[89,120,103];
+let mikeScore=[116,94,123];
+let maryScore=[97,134,105];
 let johnAvg, mikeAvg, maryAvg=0;
 
 johnAvg= Math.round(averageScore(johnScore));

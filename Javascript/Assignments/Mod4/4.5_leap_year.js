@@ -23,7 +23,7 @@ function leapYear(year)
         divideby400=true;
     }
     // check for multiple conditions
-    if((divideBy4 === true) && (divideby100===false)|| (divideby400===true))
+    if(((divideBy4 === true) && (divideby100===false))|| (divideby400===true)
     {
         return true;
     }
