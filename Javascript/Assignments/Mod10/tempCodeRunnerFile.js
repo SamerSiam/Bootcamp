@@ -1,0 +1,1 @@
+console.log(firstWordUpperCase ("my name is",createDash));

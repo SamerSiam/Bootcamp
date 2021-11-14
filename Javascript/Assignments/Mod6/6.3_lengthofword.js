@@ -1,7 +1,5 @@
 let myArray= ["boo", "doooo", "hoo","ro"];
 
-
-
 const arrLength= (arr)=>{
 let indexArr=[];
 
