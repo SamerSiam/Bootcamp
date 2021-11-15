@@ -1,1 +1,0 @@
-chars.push(char.toLowerCase());
