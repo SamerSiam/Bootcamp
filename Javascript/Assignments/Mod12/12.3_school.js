@@ -38,3 +38,10 @@ const school = {
     },
     ],
     };
+
+    function findPerson(personType, personID)
+    {
+        const per={};
+        return personType.find((person)=>(person.id===personID));
+    }
+    console.log(findPerson('teachers',1));
