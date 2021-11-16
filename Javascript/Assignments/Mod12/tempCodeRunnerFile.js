@@ -1,0 +1,1 @@
+store.candies.push(newCandy); 
