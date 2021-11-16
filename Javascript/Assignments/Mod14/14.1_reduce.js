@@ -16,7 +16,7 @@ const findMax= (numbers)=>
     // using reduce to find sum of even numbers, used filter first to get even
     const sumOfEven= (numbers)=>
     {
-        const evenSum=numbers.filter (n=> n%2===0).reduce((sumOfEven, currentval) =>{
+        const evenSum=numbers.filter(n=> n%2===0).reduce((sumOfEven, currentval) =>{
         
         return sumOfEven= sumOfEven+ currentval;
         
