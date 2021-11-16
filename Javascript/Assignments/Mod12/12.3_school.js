@@ -37,11 +37,20 @@ const school = {
     age: 21,
     },
     ],
-    };
-
+    assignStudent: function (){
+        const teach= this.teachers.subjects.find((sub)=>(sub==="chemistry"));
+        
+   
+    },
+};
+// find a person based on type (student/teacher)
     function findPerson(personType, personID)
     {
-        const per={};
-        return personType.find((person)=>(person.id===personID));
+       return personType.find((person)=>(person.id===personID))
     }
-    console.log(findPerson('teachers',1));
+    // console.log(findPerson(school['teachers'],1));
+
+    // assign students
+
+    
+    console.log (school.assignStudent());

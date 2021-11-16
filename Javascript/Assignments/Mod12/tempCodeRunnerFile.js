@@ -1,1 +1,1 @@
-store.candies.push(newCandy); 
+console.log(findPerson(school['teachers'],1));
