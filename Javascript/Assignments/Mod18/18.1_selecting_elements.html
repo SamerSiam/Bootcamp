@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /
+>
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+<title>Ex 18.1 Selecting Elements</title>
+</head>
+<body>
+<h1>Header</h1>
+<p>Paragraph</p>
+<a href="#">link</a>
+<img src="" alt="" />
+<div class="x">Div with a class</div>
+<div id="y">Div with an id</div>
+<input type="text" />
+<input type="text" />
+<input type="text" />
+</body>
+<script>
+const header= document.getElementsByTagName('h1');
+const paragraph= document.getElementsByTagName('p');
+const link= document.getElementsByTagName('a');
+const image= document.getElementsByTagName('img');
+const div1= document.getElementsByClassName('x');
+const div2= document.getElementById('y');
+const inputs= document.getElementsByTagName('input');
+
+console.log ('*******************NO Query Selector***********************');
+console.log(header);
+console.log(paragraph);
+console.log(link);
+console.log(image);
+console.log(div1);
+console.log(div2);
+
+for (let input of inputs)
+{
+    console.log (input);
+}
+console.log ('*******************Query Selector***********************');
+
+const header1= document.querySelector('h1');
+const paragraph1= document.querySelector('p');
+const link1= document.querySelector('a');
+const image1= document.querySelector('img');
+const div11= document.querySelector('.x');
+const div21= document.querySelector('#y');
+const inputs1= document.querySelectorAll('input');
+
+console.log(header1);
+console.log(paragraph1);
+console.log(link1);
+console.log(image1);
+console.log(div11);
+console.log(div21);
+
+for (let input1 of inputs1)
+{
+    console.log (input1);
+}
+</script>
+</html>
