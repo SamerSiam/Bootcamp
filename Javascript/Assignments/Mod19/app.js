@@ -83,3 +83,8 @@ const warriorsGames = [{
     }
   }
 ]
+
+const ulParent= document.createElement('ul');
+for (let game of warriorGames){
+  const 
+}
