@@ -1,0 +1,32 @@
+This file containes pseudocode for the Guess My Letter Game
+
+0- Set starting variables/ rules of the game
+    - Random letter selector
+    - Array to Store user guesses.
+    
+1- Get user input -- window.eventListener("keypress",e)
+    - verify valid input --use regEx to filter case insensitive alphabet
+        if bad entry, display error message and dont display
+        if accepted entry, jump to 2.
+    - print user input
+        -- if letter already exists, show duplicate entry message and go to 1
+        -- else go to 2  
+
+2- verify correct input (game rules)
+    - if guess is right, got to step 3
+    - if wrong, show wrong entry message and go to 1
+
+3- winning process
+    - show wining message
+    - ask if he wants to start over again?
+            - if true, go to 0
+            - if false, end.
+
+HTML document :
+<h1> --- title of the game
+<div> with ? + borders
+<div> message -- (dynamic from JS)
+<h2> keys guessed
+<div> letters guessed (dynamic from JS)
+
+
