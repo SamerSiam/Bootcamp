@@ -1,0 +1,1 @@
+whoIsStronger(hero.getStrength);

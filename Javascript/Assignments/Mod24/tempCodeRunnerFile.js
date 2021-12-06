@@ -1,1 +1,1 @@
-le kick', 'quick attack']);
+console.log(testArray.Myfind(10
