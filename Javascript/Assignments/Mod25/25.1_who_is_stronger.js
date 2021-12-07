@@ -16,8 +16,11 @@ const hero = {
 
  /*  create a bound copy of the function to the hero object so 
     we can access the methods and data elements of the hero object
- **/   
- const bound=whoIsStronger.bind(hero);
-    console.log(bound(hero.getStrength));
+ **/ 
+const strength= hero.getStrength;
+console.log(whoIsStronger(strength.bind(hero)));  
+
+//  const bound=whoIsStronger.bind(hero);
+//     console.log(bound(hero.getStrength));
 
 
