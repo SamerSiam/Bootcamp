@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+   margin-top: 50px;
+}
+
+.button{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    width: 140vmin;
+    height: 70vmin;
+
+}
+.poster{
+    position: relative;
+    top:0;
+    left:0;
+    max-width: 30%; 
+    height: 100%; 
+}
+
+.description{
+    margin-top: 20vmin;
+    width: 60%;
+    position: absolute;
+    margin-left: 50vmin;
+    flex-direction: row;
+    
+}
+
+.title{
+    display: block;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: darkslategray;
+}
+
+.sub-title{
+    display: block;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
