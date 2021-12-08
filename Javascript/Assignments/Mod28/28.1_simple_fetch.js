@@ -7,7 +7,7 @@ function getJoke(){
     .then((data)=>{
         title.textContent= data.contents.jokes[0].joke.title;
         joke.textContent= data.contents.jokes[0].joke.text;
-        console.log(data.contents.jokes[0].joke.text);
+        
     })
 }
 
