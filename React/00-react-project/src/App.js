@@ -1,37 +1,32 @@
-import Header from './Header.js';
-import Button from './Button.js';
-import Card from './Card.js';
-
-import './App.css'
 import React from 'react';
-function App() {
-    window.navigator.geolocation.getCurrentPosition(
-        (position)=> console.log(position),
-        (err)=> console.log(err)
+import './App.css'
+import Button from './Components/Button'
+const colors = ['blue','red','yellow'];
 
-    );
-return (
-    
-    <div>
-    <h1 style= {{color:'red'}}>hi </h1>
-    <Header title='Task Tracker' />
-    <Header title='Another task' />
-    <Button style= {{fontWeight:'bold'}}  text='Not Important' />
-    <Button  text='Important'/>
-
-
-    <div className= "card-container">
-    <Card imageUrl='https://picsum.photos/460/220'primaryText='Primary Text' 
-    secondaryText="Secondary Text" link1="#" link1Text='SHARE' 
-    link2="#" link2Text='EXPLORE'/>
-    </div>
-    
-    </div>
-    );
-    }
     class App extends React.Component{
+       
+
+        state={color:'', message:''};
+
+        handleClick= (childData)=> {
+            this.setState({message: childData})
+            console.log(this.state.message)
+        }
+        
+     
+           displayButtons = () => {
+            return colors.map((button) => {
+            return <Button color={button} onHandleClick = {this.handleClick} />;
+            });
+          };
+
         render(){
-            return <div> Latitude: </div>
+            return (
+            <div> 
+                {this.displayButtons()}
+                 
+            </div>
+            )
         }
     }
     export default App;

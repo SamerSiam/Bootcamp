@@ -1,6 +1,6 @@
 import { render } from "ejs";
 import React from "react";
-import './App.css' 
+import '../App.css' 
 
     class Card extends React.Component{
         constructor(props){

@@ -1,0 +1,35 @@
+
+@keyframes box-anim {
+    from {left: 0;} 
+    to{left:300px;} 
+  }
+
+
+.Box{
+   
+    position: absolute;
+    left:0;
+    top: 200px;
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+    animation-name: box-anim;
+    animation-duration: 4s;
+}
+
+.Box2{
+   
+    position: absolute;
+    left:0;
+    top: 500px;
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    animation-name: color-anim;
+    animation-duration: 4s;
+}
+
+
+.hidden{
+    visibility: hidden;
+}
