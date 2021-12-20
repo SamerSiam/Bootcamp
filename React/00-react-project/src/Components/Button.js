@@ -8,7 +8,7 @@ import './Button.css'
         
         onHandleClick=(event)=>{
             this.props.onHandleClick(event.target.innerText)
-                console.log(event.target.innerText)
+                // console.log(event.target.innerText)
              }
 
 
