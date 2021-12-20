@@ -1,4 +1,4 @@
-import React ,{Component,createRef}from 'react';
+import React ,{Component}from 'react';
 import Button from './Button'
 
 class Input extends Component{
