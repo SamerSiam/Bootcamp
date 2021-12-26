@@ -7,8 +7,7 @@ class Products extends React.Component {
     state = { itemsList: items}
 
     componentDidMount() {
-        // const tempArr = items.slice();
-        // this.setState({ itemsList: tempArr });
+        
         console.log(this.itemsList)
     }
     displayProducts=()=>{

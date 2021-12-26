@@ -10,7 +10,6 @@ class Input extends Component{
            this.state={value:'',copied:''};
        } 
     
-     
     onFormSubmit= event=>{
         event.preventDefault();
         this.props.onSubmit(this.state.value)
