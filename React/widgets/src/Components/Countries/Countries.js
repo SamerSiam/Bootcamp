@@ -9,17 +9,33 @@ const [term, setTerm]= useState('');
 const [isLoading, setLoading]=useState(false); 
 
 useEffect(()=>{
-
+    console.log("inside useeffect")
     const fetch=async()=>{
     setLoading(true)
     const {data}=await axios.get('https://intense-mesa-62220.herokuapp.com/https://restcountries.com/v2/all')
     setResults(data) ;
     setLoading(false)
-    console.log("data is",data)
-    };
     
-    fetch();
-}, []);
+    };
+
+    if (term && !results.length){
+        fetch();
+    }
+    else{
+        const timerId=setTimeout(()=>{ 
+        if (term){
+            console.log("inside timer")
+            fetch();
+        }
+    },500);
+    
+   return () =>{
+       clearTimeout(timerId);
+       console.log("CLEANUP")
+   }; 
+    }
+   
+}, [term, results.length]);
 
 const filter = results.filter((item) => {
     return item.name.toLowerCase().startsWith(term.toLowerCase());
@@ -38,10 +54,6 @@ const showCountries=(arr)=>{
    
    )};
 
-  
-   
-  
-  console.log("filter is",filter)
           
   return (
 

@@ -1,19 +1,14 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Spinner from '../Spinner/Spiner'
 
- 
 
 const ChuckNorris=()=>{ 
 
 const [data, setData]=useState([]);
-const [categories, setCategories]= useState([]);
-
-
 const [isLoading, setLoading]=useState(false); 
 const [errorMsg, setErrorMsg] = useState("");
 
-
+const cancelTokenSource = axios.CancelToken.source();
 
 useEffect(()=>{
    
@@ -22,8 +17,9 @@ useEffect(()=>{
         setLoading(true)
     try{ 
         const {data}=await axios.get(
-            `https://api.chucknorris.io/jokes/categories`
-        ); 
+            `https://api.chucknorris.io/jokes/categories`,{
+                 cancelToken: cancelTokenSource.token
+        }); 
         setData(data) ;
         setLoading(false);  
         console.log("data is",data) 
@@ -33,7 +29,9 @@ useEffect(()=>{
         
     };
     fetch();
-   
+    return () => {
+        cancelTokenSource.cancel() 
+      }
 }, []);
 
 const showItems=()=>{
