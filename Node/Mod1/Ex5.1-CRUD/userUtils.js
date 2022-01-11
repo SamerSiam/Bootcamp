@@ -19,7 +19,7 @@ const addUser = (name, email) => {
 /********************************************* */
 const saveUsers = function (users) {
   const dataJSON = JSON.stringify(users);
-  fs.writeFileSync("users.json", dataJSON);
+  fs.writeFileSync("users.json", dataJON);
 };
 const loadUsers = function () {
   try {
@@ -54,6 +54,7 @@ const updateUser = (id, name, email) => {
   const updatedUser = users.find((user) => {
     return user.id === id;
   });
+  // no need to remove the item and add it the new one, update will modify object
   const results = users.filter((user) => {
     return user.id !== id;
   });

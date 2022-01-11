@@ -54,12 +54,10 @@ yargs.command({
     },
     name: {
       describe: "user name",
-      demandOption: true,
       type: "string",
     },
     email: {
       describe: "user email",
-      demandOption: true,
       type: "string",
     },
   },
