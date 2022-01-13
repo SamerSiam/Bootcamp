@@ -1,10 +1,10 @@
+const path = require("path");
 const express = require("express");
+
 const app = express();
-//app.com
-//call with two args, route and call back
-app.get("", (req, res) => {
-  res.send("Hello Express!");
-});
+const publicDirectory = path.join(__dirname, "../public");
+app.use(express.static(publicDirectory));
+
 
 app.get("/help", (req, res) => {
   res.send("Help Page");
