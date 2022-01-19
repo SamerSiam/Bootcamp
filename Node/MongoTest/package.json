@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon mongooseTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.7"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
